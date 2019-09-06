@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Maths calculator</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script type="text/javascript" src="calculator.js"></script>
+    </head>
+    <body>
+        <table>
+            <!--this is the header section-->
+            <tr>
+                <tr>
+                    <td class="heading">
+                        Fav Maths calculator
+                    </td>
+                </tr>
+                <td>
+                    <input type="text" id="input" placeholder="0" readonly="readonly">
+                    <input type="text" id="answer" readonly="readonly" style="color: rgb(6, 139, 255);">
+                </td>
+            </tr>
+            <!--this is the buttom section of the calculator-->
+            <tr>
+
+                <td>
+                        <input type="button" value="CE" onclick="clearScreen()" style="color: white; background: red;">
+                        <input type="button" value="&#247;" onclick="getOperand()">
+                        <input type="button" value="x" onclick="getOperand('*')">
+                        <input type="button" value="&#8592;" onclick="backSpace()" style="color: red;">
+                        <br>
+
+                    <input type="button" value=" 1 " onclick="getNumber(1)">
+                    <input type="button" value=" 2 " onclick="getNumber(2)">
+                    <input type="button" value=" 3 " onclick="getNumber(3)">
+                    <input type="button" value="+" onclick="getOperand('+')">
+                    <br>
+                    <input type="button" value="4" onclick="getNumber(4)">
+                    <input type="button" value="5" onclick="getNumber(5)">
+                    <input type="button" value="6" onclick="getNumber(6)">
+                    <input type="button" value="-" onclick="getOperand('-')">
+                    <br>
+                    <input type="button" value="7" onclick="getNumber(7)">
+                    <input type="button" value="8" onclick="getNumber(8)">
+                    <input type="button" value="9" onclick="getNumber(9)">
+                    <input type="button" value="&#120&sup2"  onclick="square()">
+                    <br>
+                    <input type="button" value="+/-" onclick="getOperand('+/-')">
+                    <input type="button" value="0" onclick="getNumber(0)">
+                    <input type="button" value="." style="font-size: large " onclick="point()">
+                    <input type="button" value="&#8730" onclick="squareRoot()">
+                    <br>
+                    <input type="button" value="ans" onclick="getAns('ans')" style="color:red;">
+                    <input type="button" class="operand" value="(" onclick="getOperand('OB')">
+                    <input type="button" class="operand" value=")" onclick="getOperand('CB')">
+                    <input type="button" value="=" onclick="compute()" style="color:white; background: green;" >
+                    <br>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>
